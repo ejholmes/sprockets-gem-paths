@@ -1,5 +1,7 @@
 # Sprockets::GemPaths
 
+[![Build Status](https://travis-ci.org/ejholmes/sprockets-gem-paths.png?branch=master)](https://travis-ci.org/ejholmes/sprockets-gem-paths)
+
 Adds a `.append_gem_paths` method to `Sprockets::Environment`, which adds paths
 to vendored gems (think bourbon), when using sprockets outside of rails.
 Extracted from [Middleman](https://github.com/middleman/middleman).
