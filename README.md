@@ -1,6 +1,8 @@
-# Sprockets::Gem::Paths
+# Sprockets::GemPaths
 
-TODO: Write a gem description
+Adds a `.append_gem_paths` method to `Sprockets::Environment`, which adds paths
+to vendored gems (think bourbon), when using sprockets outside of rails.
+Extracted from [Middleman](https://github.com/middleman/middleman).
 
 ## Installation
 
@@ -8,17 +10,20 @@ Add this line to your application's Gemfile:
 
     gem 'sprockets-gem-paths'
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sprockets-gem-paths
-
 ## Usage
 
-TODO: Write usage instructions here
+Build your sprockets environment.
+
+```ruby
+environment = Sprockets::Environment.new
+environment.add_path 'assets'
+```
+
+Append paths to gems.
+
+```ruby
+environment.append_gem_paths
+```
 
 ## Contributing
 
